@@ -115,22 +115,21 @@ const Login = () => {
           </div>
 
           {loading ? (
-            <Button className="w-full my-4 flex items-center justify-center">
+            <Button className="w-full my-4 flex items-center justify-center bg-[#A4161A] hover:bg-[#660708]">
               <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Please wait
             </Button>
           ) : (
             <Button
               type="submit"
-              className="w-full my-4 bg-[#A4161A] text-white font-semibold py-3 rounded-lg shadow-md 
-             hover:bg-[#660708] hover:scale-[1.01] transition-all duration-300"
+              className="w-full my-4 bg-[#A4161A] text-white font-semibold py-3 rounded-lg shadow-md hover:bg-[#660708] hover:scale-[1.01] transition-all duration-300"
             >
-              Signup
+              Login
             </Button>
           )}
 
-          <p className="text-sm text-center mt-3 text-gray-600">
+          <p className="text-md text-center mt-3">
             Don't have an account?{" "}
-            <Link to="/signup" className="text-blue-600 hover:underline">
+            <Link to="/signup" className="text-blue-900 hover:underline">
               Signup
             </Link>
           </p>

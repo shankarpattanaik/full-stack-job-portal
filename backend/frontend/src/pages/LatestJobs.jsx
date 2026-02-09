@@ -7,11 +7,9 @@ const LatestJobs = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-6">
-      <h1
-        className="text-center font-bold leading-tight mb-8 sm:mb-12 text-2xl sm:text-3xl md:text-5xl lg:text-5xl"
-      >
-        <span className="text-[#A4161A]">Latest & Top </span>
-        <span className="text-[#0B090A]">Career Opportunities</span>
+      <h1 className="text-center font-bold leading-tight mb-8 sm:mb-12 text-2xl sm:text-3xl md:text-5xl lg:text-5xl">
+        <span className="text-[#A4161A]">Unlock Your </span>
+        <span className="text-[#0B090A]">Next Career Move</span>
       </h1>
 
       {allJobs.length <= 0 ? (

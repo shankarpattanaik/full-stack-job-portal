@@ -24,20 +24,22 @@ const HeroSection = () => {
             Get <span className="text-[#A4161A]">Hired Faster</span>
           </span>
         </h1>
+        <div className="w-full px-4 sm:px-6">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center w-full sm:w-4/5 md:w-3/5 lg:w-4/5 mx-auto shadow-lg border border-gray-200 rounded-xl sm:rounded-full overflow-hidden mt-6 sm:mt-8 bg-white">
+            <input
+              type="text"
+              placeholder="Explore your dream career"
+              onChange={(e) => setQuery(e.target.value)}
+              className="w-full px-4 sm:px-5 py-3 sm:py-4 text-base sm:text-lg text-gray-700 outline-none border-none bg-transparent"
+            />
 
-        <div className="flex flex-col sm:flex-row items-center w-full sm:w-4/5 md:w-3/5 lg:w-4/5 mx-auto shadow-lg border border-gray-200 rounded-full overflow-hidden mt-6 sm:mt-8">
-          <input
-            type="text"
-            placeholder="Explore your dream career"
-            onChange={(e) => setQuery(e.target.value)}
-            className="outline-none border-none w-full px-4 py-3 text-gray-700 text-base sm:text-lg"
-          />
-          <Button
-            onClick={searchJobHandler}
-            className="w-full sm:w-auto sm:px-6 py-3 sm:py-3 bg-[#A4161A] hover:bg-[#660708] rounded-full sm:rounded-r-full"
-          >
-            <Search className="h-5 w-5 text-white" />
-          </Button>
+            <Button
+              onClick={searchJobHandler}
+              className="w-full sm:w-auto flex items-center justify-center px-6 py-3 sm:py-8 bg-[#A4161A] hover:bg-[#660708] rounded-none sm:rounded-full sm:rounded-l-none"
+            >
+              <Search className="h-6 w-6 text-white" />
+            </Button>
+          </div>
         </div>
       </div>
     </div>

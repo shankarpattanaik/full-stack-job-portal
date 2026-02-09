@@ -66,7 +66,7 @@ const Signup = () => {
   }, [user]);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       <Navbar />
       <div className="flex items-center justify-center px-4 sm:px-6 lg:px-8 py-10">
         <form
@@ -163,22 +163,21 @@ const Signup = () => {
           </div>
 
           {loading ? (
-            <Button className="w-full my-4 flex items-center justify-center">
+            <Button className="w-full my-4 flex items-center justify-center bg-[#A4161A] hover:bg-[#660708]">
               <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Please wait
             </Button>
           ) : (
             <Button
               type="submit"
-              className="w-full my-4 bg-[#A4161A] text-white font-semibold py-3 rounded-lg shadow-md 
-             hover:bg-[#660708] hover:scale-[1.01] transition-all duration-300"
+              className="w-full my-4 bg-[#A4161A] text-white font-semibold py-3 rounded-lg shadow-md hover:bg-[#660708] hover:scale-[1.01] transition-all duration-300"
             >
               Signup
             </Button>
           )}
 
-          <p className="text-sm text-center mt-3 text-gray-600">
+          <p className="text-md text-center mt-3">
             Already have an account?{" "}
-            <Link to="/login" className="text-blue-600 hover:underline">
+            <Link to="/login" className="text-blue-900 hover:underline">
               Login
             </Link>
           </p>
