@@ -18,7 +18,7 @@ const Profile = () => {
   const { user } = useSelector((store) => store.auth);
 
   return (
-    <div className="bg-gray-50 dark:bg-gray-900 min-h-screen">
+    <div className="min-h-screen">
       <Navbar />
 
       {/* Profile Info */}
@@ -27,8 +27,11 @@ const Profile = () => {
           <div className="flex items-center gap-4">
             <Avatar className="h-24 w-24">
               <AvatarImage
-                src="https://www.shutterstock.com/image-vector/circle-line-simple-design-logo-600nw-2174926871.jpg"
-                alt="profile"
+                src={
+                  user?.profile?.profilePhoto ||
+                  "https://www.shutterstock.com/image-vector/circle-line-simple-design-logo-600nw-2174926871.jpg"
+                }
+                alt={user?.fullname || "profile"}
               />
             </Avatar>
             <div>
