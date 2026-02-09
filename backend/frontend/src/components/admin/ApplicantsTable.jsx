@@ -39,7 +39,6 @@ const ApplicantsTable = () => {
     <div className="w-full">
       <div className="hidden sm:block">
         <Table>
-          <TableCaption>A list of your recent applied users</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead>Full Name</TableHead>

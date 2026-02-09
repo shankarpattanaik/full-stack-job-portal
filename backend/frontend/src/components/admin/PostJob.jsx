@@ -65,7 +65,7 @@ const PostJob = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       <Navbar />
       <div className="flex justify-center w-full my-5 px-4 sm:px-6 lg:px-8">
         <form

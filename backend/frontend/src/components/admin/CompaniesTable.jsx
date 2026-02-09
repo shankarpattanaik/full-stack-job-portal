@@ -35,12 +35,8 @@ const CompaniesTable = () => {
 
   return (
     <div className="w-full">
-      {/* Desktop Table */}
       <div className="hidden sm:block">
         <Table>
-          <TableCaption>
-            A list of your recent registered companies
-          </TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead>Logo</TableHead>

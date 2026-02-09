@@ -77,14 +77,13 @@ const CompanySetup = () => {
   }, [singleCompany]);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       <Navbar />
       <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 my-10">
         <form
           onSubmit={submitHandler}
           className="bg-white p-6 sm:p-8 rounded-lg shadow-md"
         >
-          {/* Header */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
             <Button
               onClick={() => navigate("/admin/companies")}
@@ -97,7 +96,6 @@ const CompanySetup = () => {
             <h1 className="font-bold text-xl sm:text-2xl">Company Setup</h1>
           </div>
 
-          {/* Input Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <Label>Company Name</Label>
@@ -145,7 +143,6 @@ const CompanySetup = () => {
             </div>
           </div>
 
-          {/* Submit Button */}
           <div className="mt-6">
             {loading ? (
               <Button className="w-full">

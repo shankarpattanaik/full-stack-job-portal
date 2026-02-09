@@ -33,7 +33,6 @@ const AdminJobsTable = () => {
     <div className="w-full">
       <div className="hidden sm:block">
         <Table>
-          <TableCaption>A list of your recent posted jobs</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead>Company Name</TableHead>
