@@ -1,4 +1,4 @@
-# Full Stack Job Portal
+# Full Stack Job Portal 🚀
 
 [![React](https://img.shields.io/badge/React-18-blue)](https://reactjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-20-green)](https://nodejs.org/)
@@ -7,8 +7,7 @@
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-blue)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
-A full-stack job portal application that allows **candidates** to search and apply for jobs and **recruiters** to post and manage job listings. The platform includes secure authentication, role-based access control, and a responsive user interface.
-- ✔ Production-ready backend with JWT authentication, RBAC, and RESTful APIs
+A full-stack job portal application that allows **candidates** to search and apply for jobs and **recruiters** to post and manage job listings. The platform includes secure authentication, role-based access control, and a responsive user interface. Production-ready backend with JWT authentication, RBAC, and RESTful APIs
 
 ## 🔗 Links
 
