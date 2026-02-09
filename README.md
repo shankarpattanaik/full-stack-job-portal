@@ -1,7 +1,14 @@
 # Full Stack Job Portal
 
+[![React](https://img.shields.io/badge/React-18-blue)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-20-green)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express-4.x-lightgrey)](https://expressjs.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-6.x-brightgreen)](https://www.mongodb.com/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-blue)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+
 A full-stack job portal application that allows **candidates** to search and apply for jobs and **recruiters** to post and manage job listings. The platform includes secure authentication, role-based access control, and a responsive user interface.
-✔ Production-ready backend with JWT authentication, RBAC, and RESTful APIs
+- ✔ Production-ready backend with JWT authentication, RBAC, and RESTful APIs
 
 ## 🔗 Links
 
@@ -25,7 +32,7 @@ All APIs are versioned under `/api/v1` and secured using JWT-based authenticatio
 | POST   | `/register`       | Register a new user (Candidate / Recruiter) with profile image upload | ❌   |
 | POST   | `/login`          | User login and JWT generation                                         | ❌   |
 | GET    | `/logout`         | Logout user and clear session/token                                   | ✅   |
-| POST   | `/profile/update` | Update user profile (with image upload)                               | ✅   |
+| POST   | `/profile/update` | Update user profile (with resume upload)                               | ✅   |
 
 ---
 
@@ -159,18 +166,34 @@ git clone https://github.com/shankarpattanaik/full-stack-job-portal.git
 
 # Backend
 
-cd backend
-npm install
-node index.js
+- cd backend
+- npm install
+- node index.js
 
 # Frontend
 
-cd frontend
-npm install
-npm run dev
+- cd frontend
+- npm install
+- npm run dev
 
-## 👨‍💻 Author
+## 🔮 Future Enhancements
 
-- Shankar Pattanaik
-- Full Stack Developer
+- Advanced job search & filtering
+- Email notifications for applications
+- Resume parsing & AI-based recommendations
+- Admin dashboard for managing users and companies
+
+## 🤝 Contributing
+
+- Fork the repository
+- Create a feature branch (git checkout -b feature-name)
+- Commit your changes (git commit -m "Add feature")
+- Push to the branch (git push origin feature-name)
+- Open a Pull Request
+
+## 👨‍💻 Author/Contact
+
+- Shankar Pattanaik - Full Stack Developer
 - GitHub: https://github.com/shankarpattanaik
+- LinkedIn: https://linkedin.com/in/shankarpattanaik
+- Email: shankarpattanaik2000@gmail.com
