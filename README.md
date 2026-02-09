@@ -10,64 +10,6 @@ A full-stack job portal application that allows **candidates** to search and app
 
 ---
 
-## 🛠 Tech Stack
-
-**Frontend**
-
-- React.js
-- Tailwind CSS
-
-**Backend**
-
-- Node.js
-- Express.js
-
-**Database**
-
-- MongoDB
-- Mongoose
-
-**Authentication & Security**
-
-- JSON Web Tokens (JWT)
-- Role-Based Access Control (RBAC)
-
-**Cloud Services**
-
-- Cloudinary (Resume & Profile Image Storage)
-
----
-
-## ✨ Features
-
-### 👤 Authentication & Authorization
-
-- Secure user signup and login using JWT
-- Protected routes with token validation
-- Role-based access control for **Recruiters** and **Candidates**
-
-### 🧑‍💼 Recruiter Features
-
-- Create, update, and delete job postings
-- View applications for posted jobs
-- Manage recruiter profile
-
-### 🧑‍🎓 Candidate Features
-
-- Browse and search job listings
-- Apply for jobs
-- Upload resumes and profile images using Cloudinary
-- Manage candidate profile
-
-### 🌐 General Features
-
-- RESTful API architecture
-- Scalable MongoDB data modeling with Mongoose
-- Fully responsive UI with Tailwind CSS
-- Secure file uploads via Cloudinary
-
----
-
 ## 🛣 API Routes Documentation
 
 All APIs are versioned under `/api/v1` and secured using JWT-based authentication.
@@ -126,6 +68,64 @@ All APIs are versioned under `/api/v1` and secured using JWT-based authenticatio
 
 ---
 
+## 🛠 Tech Stack
+
+**Frontend**
+
+- React.js
+- Tailwind CSS
+
+**Backend**
+
+- Node.js
+- Express.js
+
+**Database**
+
+- MongoDB
+- Mongoose
+
+**Authentication & Security**
+
+- JSON Web Tokens (JWT)
+- Role-Based Access Control (RBAC)
+
+**Cloud Services**
+
+- Cloudinary (Resume & Profile Image Storage)
+
+---
+
+## ✨ Features
+
+### 👤 Authentication & Authorization
+
+- Secure user signup and login using JWT
+- Protected routes with token validation
+- Role-based access control for **Recruiters** and **Candidates**
+
+### 🧑‍💼 Recruiter Features
+
+- Create, update, and delete job postings
+- View applications for posted jobs
+- Manage recruiter profile
+
+### 🧑‍🎓 Candidate Features
+
+- Browse and search job listings
+- Apply for jobs
+- Upload resumes and profile images using Cloudinary
+- Manage candidate profile
+
+### 🌐 General Features
+
+- RESTful API architecture
+- Scalable MongoDB data modeling with Mongoose
+- Fully responsive UI with Tailwind CSS
+- Secure file uploads via Cloudinary
+
+---
+
 ## 🔐 Authentication & Middleware
 
 - **JWT Authentication** for secure API access
@@ -142,7 +142,35 @@ All APIs are versioned under `/api/v1` and secured using JWT-based authenticatio
 - Scalable MongoDB schema design using Mongoose
 - Secure file uploads and cloud storage
 
+## 🚀 Getting Started (Local Setup)
+
+# Clone repository
+
+git clone https://github.com/shankarpattanaik/full-stack-job-portal.git
+
+## 🧪 Environment Variables
+
+- PORT=8000
+- MONGO_URI=your_mongodb_connection_string
+- SECRET_KEY=your_jwt_secret
+- CLOUD_NAME=your_cloudinary_name
+- API_KEY=your_api_key
+- API_SECRET=your_api_secret
+
+# Backend
+
+cd backend
+npm install
+node index.js
+
+# Frontend
+
+cd frontend
+npm install
+npm run dev
+
 ## 👨‍💻 Author
 
 - Shankar Pattanaik
 - Full Stack Developer
+- GitHub: https://github.com/shankarpattanaik
