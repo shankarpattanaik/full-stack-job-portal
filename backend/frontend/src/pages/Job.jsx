@@ -16,7 +16,7 @@ const Job = ({ job }) => {
   };
 
   return (
-    <div className="p-5 rounded-lg shadow-lg bg-white border border-gray-300 transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-2xl w-full min-h-[350px] flex flex-col justify-between cursor-pointer">
+    <div className="p-5 rounded-lg bg-white border border-gray-100 shadow-sm transition-transform duration-300 hover:scale-[1.01] hover:shadow-2xl w-full min-h-[360px] flex flex-col justify-between cursor-pointer">
       <div className="flex items-center justify-between">
         <p className="text-sm text-gray-700">
           {daysAgoFunction(job?.createdAt) === 0
@@ -33,15 +33,13 @@ const Job = ({ job }) => {
           <AvatarImage src={job?.company?.logo} />
         </Avatar>
         <div>
-          <h1 className="font-medium text-lg text-gray-800">
-            {job?.company?.name}
-          </h1>
+          <h1 className="font-medium text-lg">{job?.company?.name}</h1>
           <p className="text-sm">India</p>
         </div>
       </div>
 
       <div className="flex-1">
-        <h1 className="font-bold text-lg my-2 text-gray-900">{job?.title}</h1>
+        <h1 className="font-bold text-lg my-2">{job?.title}</h1>
         <p className="text-sm text-gray-700 line-clamp-3">{job?.description}</p>
       </div>
 

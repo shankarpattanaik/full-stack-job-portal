@@ -6,8 +6,10 @@ const LatestJobs = () => {
   const { allJobs } = useSelector((store) => store.job);
 
   return (
-    <div className="text-center max-w-7xl mx-auto mt-4 mb-10 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-6">
+      <h1
+        className="text-center font-bold leading-tight mb-8 sm:mb-12 text-2xl sm:text-3xl md:text-5xl lg:text-5xl"
+      >
         <span className="text-[#A4161A]">Latest & Top </span>
         <span className="text-[#0B090A]">Career Opportunities</span>
       </h1>
