@@ -74,7 +74,7 @@ const Profile = () => {
               user.profile.skills.map((skill, index) => (
                 <Badge
                   key={index}
-                  className="bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-200"
+                  className="bg-blue-100 text-blue-900 pointer-events-none"
                 >
                   {skill}
                 </Badge>
