@@ -8,7 +8,7 @@
 [![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-latest-black)](https://ui.shadcn.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
-A full-stack job portal application that allows **candidates** to search and apply for jobs and **recruiters** to post and manage job listings. The platform includes secure authentication, role-based access control, and a responsive user interface. Production-ready backend with JWT authentication, RBAC, and RESTful APIs
+A full-stack job portal application that allows **candidates** to search and apply for jobs and **recruiters** to post and manage job listings. The platform includes secure authentication, role-based access control, and a responsive user interface.
 
 ## 🔗 Links
 
@@ -74,6 +74,22 @@ All APIs are versioned under `/api/v1` and secured using JWT-based authenticatio
 | POST   | `/status/:id/update` | Update application status (Recruiter only)         | ✅   |
 
 ---
+
+## 🏗 System Architecture
+
+- Frontend (React + Tailwind)
+-        ↓
+- REST APIs (Express.js)
+-        ↓
+- Authentication Layer (JWT + RBAC)
+-        ↓
+- Business Logic (Controllers & Services)
+-        ↓
+- MongoDB (Mongoose ODM)
+        ↓
+- Cloudinary (File Storage)
+
+- The application follows a layered architecture separating routes, controllers, services, and database models to ensure,scalability, maintainability, and testability.
 
 ## 🛠 Tech Stack
 
@@ -176,6 +192,15 @@ git clone https://github.com/shankarpattanaik/full-stack-job-portal.git
 - cd frontend
 - npm install
 - npm run dev
+
+---
+
+## 🚀 Deployment
+
+- Frontend deployed on Render
+- Backend deployed on Render
+- MongoDB hosted on MongoDB Atlas
+- Environment variables securely managed
 
 ## 🔮 Future Enhancements
 
