@@ -86,7 +86,7 @@ All APIs are versioned under `/api/v1` and secured using JWT-based authenticatio
 - Business Logic (Controllers & Services)
 -        ↓
 - MongoDB (Mongoose ODM)
-        ↓
+-        ↓
 - Cloudinary (File Storage)
 
 - The application follows a layered architecture separating routes, controllers, services, and database models to ensure,scalability, maintainability, and testability.
