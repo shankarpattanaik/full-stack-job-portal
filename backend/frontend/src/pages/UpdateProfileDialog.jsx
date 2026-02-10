@@ -84,7 +84,6 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
         </DialogHeader>
 
         <form onSubmit={submitHandler} className="space-y-4">
-          {/* Name */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
             <Label htmlFor="fullname" className="sm:w-1/4 text-left">
               Name
@@ -99,7 +98,6 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
             />
           </div>
 
-          {/* Email */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
             <Label htmlFor="email" className="sm:w-1/4 text-left">
               Email
@@ -114,7 +112,6 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
             />
           </div>
 
-          {/* Phone Number */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
             <Label htmlFor="phoneNumber" className="sm:w-1/4 text-left">
               Number
@@ -128,7 +125,6 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
             />
           </div>
 
-          {/* Bio */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
             <Label htmlFor="bio" className="sm:w-1/4 text-left">
               Bio
@@ -142,7 +138,6 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
             />
           </div>
 
-          {/* Skills */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
             <Label htmlFor="skills" className="sm:w-1/4 text-left">
               Skills
@@ -157,7 +152,6 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
             />
           </div>
 
-          {/* Resume */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
             <Label htmlFor="file" className="sm:w-1/4 text-left">
               Resume
@@ -172,7 +166,6 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
             />
           </div>
 
-          {/* Submit */}
           <DialogFooter>
             <Button
               type="submit"

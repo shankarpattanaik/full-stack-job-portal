@@ -20,17 +20,12 @@ const Profile = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-
-      {/* Profile Info */}
       <div className="max-w-4xl mx-auto bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl my-5 p-6 sm:p-8 shadow-md px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row justify-between gap-4">
           <div className="flex items-center gap-4">
             <Avatar className="h-24 w-24">
               <AvatarImage
-                src={
-                  user?.profile?.profilePhoto ||
-                  "https://www.shutterstock.com/image-vector/circle-line-simple-design-logo-600nw-2174926871.jpg"
-                }
+                src={user?.profile?.profilePhoto}
                 alt={user?.fullname || "profile"}
               />
             </Avatar>
@@ -52,7 +47,6 @@ const Profile = () => {
           </Button>
         </div>
 
-        {/* Contact Info */}
         <div className="my-5 space-y-2">
           <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
             <Mail />
@@ -64,7 +58,6 @@ const Profile = () => {
           </div>
         </div>
 
-        {/* Skills */}
         <div className="my-5">
           <h1 className="font-semibold text-gray-800 dark:text-gray-100 mb-2">
             Skills
@@ -85,7 +78,6 @@ const Profile = () => {
           </div>
         </div>
 
-        {/* Resume */}
         <div className="grid w-full max-w-sm items-start gap-1.5">
           <Label className="text-md font-bold text-gray-800 dark:text-gray-100">
             Resume
@@ -105,7 +97,6 @@ const Profile = () => {
         </div>
       </div>
 
-      {/* Applied Jobs */}
       <div className="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-2xl p-6 sm:p-8 shadow-md mt-6 px-4 sm:px-6 lg:px-8">
         <h1 className="font-bold text-lg text-gray-900 dark:text-gray-100 mb-4">
           Applied Jobs
@@ -113,7 +104,6 @@ const Profile = () => {
         <AppliedJobTable />
       </div>
 
-      {/* Update Profile Dialog */}
       <UpdateProfileDialog open={open} setOpen={setOpen} />
     </div>
   );

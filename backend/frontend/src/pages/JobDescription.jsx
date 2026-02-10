@@ -77,7 +77,7 @@ const JobDescription = () => {
             </h1>
             <div className="flex flex-wrap items-center gap-2 mt-3">
               <Badge className="text-blue-700 font-bold" variant="ghost">
-                {singleJob?.postion} Positions
+                {singleJob?.position} Positions
               </Badge>
               <Badge className="text-[#F83002] font-bold" variant="ghost">
                 {singleJob?.jobType}
@@ -94,7 +94,7 @@ const JobDescription = () => {
             className={`rounded-lg px-6 py-3 font-semibold text-white transition-all ${
               isApplied
                 ? "bg-gray-600 cursor-not-allowed"
-                : "bg-[#7209b7] hover:bg-[#5f32ad] scale-105 hover:scale-110"
+                : "bg-[#A4161A] hover:bg-[#660708] scale-[1.01] hover:scale-110"
             }`}
           >
             {isApplied ? "Already Applied" : "Apply Now"}
