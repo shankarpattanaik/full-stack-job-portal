@@ -169,7 +169,7 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
           <DialogFooter>
             <Button
               type="submit"
-              className="w-full py-2 flex justify-center items-center gap-2"
+              className="w-full py-2 flex justify-center items-center gap-2 bg-[#A4161A] hover:bg-[#660708]"
             >
               {loading && <Loader2 className="animate-spin h-4 w-4" />}
               {loading ? "Please wait" : "Update"}
