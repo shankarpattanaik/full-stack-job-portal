@@ -202,6 +202,13 @@ git clone https://github.com/shankarpattanaik/full-stack-job-portal.git
 - MongoDB hosted on MongoDB Atlas
 - Environment variables securely managed
 
+## 🧪 Testing
+
+- API testing done using Postman
+- Manual testing for all recruiter & candidate flows
+- Validated edge cases like unauthorized access and invalid tokens
+
+
 ## 🔮 Future Enhancements
 
 - Advanced job search & filtering
