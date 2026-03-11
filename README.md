@@ -12,7 +12,7 @@ A full-stack job portal application that allows **candidates** to search and app
 
 ## 🔗 Links
 
-- **Live Demo:** https://full-stack-job-portal-g4xn.onrender.com
+- **Live Demo:** https://full-stack-job-portal-wtvy.onrender.com
 - **GitHub Repository:** https://github.com/shankarpattanaik/full-stack-job-portal
 
 ---
@@ -29,10 +29,10 @@ All APIs are versioned under `/api/v1` and secured using JWT-based authenticatio
 
 | Method | Endpoint          | Description                                                           | Auth |
 | ------ | ----------------- | --------------------------------------------------------------------- | ---- |
-| POST   | `/register`       | Register a new user (Candidate / Recruiter) with profile image upload | ❌   |
-| POST   | `/login`          | User login and JWT generation                                         | ❌   |
+| POST   | `/register`       | Register a new user (Candidate / Recruiter) with profile image upload | ✅   |
+| POST   | `/login`          | User login and JWT generation                                         | ✅   |
 | GET    | `/logout`         | Logout user and clear session/token                                   | ✅   |
-| POST   | `/profile/update` | Update user profile (with resume upload)                               | ✅   |
+| POST   | `/profile/update` | Update user profile (with resume upload)                              | ✅   |
 
 ---
 
@@ -207,7 +207,6 @@ git clone https://github.com/shankarpattanaik/full-stack-job-portal.git
 - API testing done using Postman
 - Manual testing for all recruiter & candidate flows
 - Validated edge cases like unauthorized access and invalid tokens
-
 
 ## 🔮 Future Enhancements
 
